@@ -9,7 +9,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Userobot {
 
-	public static void main(String[] args) throws AWTException {
+	public static void main(String[] args) throws AWTException, InterruptedException {
 		// TODO Auto-generated method stub
 		WebDriver driver=new ChromeDriver();
 		driver.manage().window().maximize();
@@ -23,18 +23,35 @@ public class Userobot {
 		
 		
 		
-		//	r.keyPress(KeyEvent.VK_TAB);
-		//	r.keyPress(KeyEvent.VK_TAB);
-//		//r.keyPress(KeyEvent.VK_TAB);
+		r.keyPress(KeyEvent.VK_TAB);
+		Thread.sleep(1000);
+		r.keyPress(KeyEvent.VK_TAB);
+		Thread.sleep(1000);
+		r.keyPress(KeyEvent.VK_TAB);
+		Thread.sleep(1000);
+
+		r.keyPress(KeyEvent.VK_TAB);
+		Thread.sleep(1000);
+		r.keyPress(KeyEvent.VK_TAB);
+		Thread.sleep(1000);
+		r.keyPress(KeyEvent.VK_TAB);
+		Thread.sleep(1000);
+		r.keyPress(KeyEvent.VK_TAB);
 //		
-//		r.keyPress(KeyEvent.VK_DOWN);
-//		r.keyPress(KeyEvent.VK_DOWN);
-//		r.keyPress(KeyEvent.VK_DOWN);
-//		r.keyPress(KeyEvent.VK_DOWN);
+		r.keyPress(KeyEvent.VK_DOWN);
+		Thread.sleep(1000);
+		r.keyPress(KeyEvent.VK_DOWN);
+		Thread.sleep(1000);
+		r.keyPress(KeyEvent.VK_DOWN);
+		Thread.sleep(1000);
+		r.keyPress(KeyEvent.VK_DOWN);
 //		
-//		r.keyPress(KeyEvent.VK_1);
-//		r.keyPress(KeyEvent.VK_ADD);
-//		r.keyPress(KeyEvent.VK_2);
+		r.keyPress(KeyEvent.VK_1);
+		Thread.sleep(1000);
+		r.keyPress(KeyEvent.VK_ADD);
+		Thread.sleep(1000);
+		r.keyPress(KeyEvent.VK_2);
+		
 	}
 
 }

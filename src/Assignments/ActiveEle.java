@@ -18,6 +18,7 @@ public class ActiveEle {
 				driver.get("https://google.com/");
 				
 				WebElement searchbox=driver.switchTo().activeElement();
+				//active element can handle when we open a browser where the cursor is present.
 				searchbox.sendKeys("Qspider");
 				
 				@Nullable

@@ -9,7 +9,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class LearnConformationPopup {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub
 		WebDriver driver=new ChromeDriver();
 		driver.manage().window().maximize();
@@ -23,6 +23,7 @@ public class LearnConformationPopup {
 		Alert a = driver.switchTo().alert();
 		System.out.println(a.getText());
 		 //a.accept();
+		Thread.sleep(2000);
 		a.dismiss();
 		 
 	}
